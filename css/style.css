@@ -1,0 +1,44 @@
+.relative {
+  width: 600px;
+  height: 600px;
+  background-color: aquamarine;
+  position: relative;
+  margin: 0 auto;
+}
+.relative:hover {
+  background-color: bisque;
+}
+.absolute {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+.absolute:hover {
+  transform: translate(50%, -10%);
+  transform: rotate(40deg);
+  transform: scale(2, 2);
+  transform: skewY(30deg);
+}
+
+.section2 {
+  background-color: blueviolet;
+  position: relative;
+}
+.bus {
+  width: 100px;
+  position: relative;
+  animation: mybus 5s infinitive;
+}
+@keyframes mybus {
+  from {
+    left: 0;
+    transform: rotate(50deg);
+  }
+  to {
+    left: 500px;
+  }
+}
